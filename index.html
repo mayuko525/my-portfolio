@@ -4,10 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
+    <div class="title">
+      <h1 id="self">Self-introduction</h1>
+      <div class="myself">
+        <img id="mypic" src="image/img1.jpg" alt="" />
+        <div class="says">
+          <p id="str">
+            村上真優子です。大学4年生です。<br />北海道出身で東京に住んでいます。
+          </p>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        onclick="reWrite(0)"
+      >
+        日本語
+      </button>
+      <button type="button" class="btn btn-outline-danger" onclick="reWrite(1)">
+        English
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        onclick="reWrite(2)"
+      >
+        français
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="item">
+        <div>
+          <a
+            href="https://apps.apple.com/jp/app/%E3%82%A6%E3%83%BC%E3%83%91%E3%83%BC%E3%83%AB%E3%83%BC%E3%83%91%E3%83%BC%E8%82%B2%E6%88%90%E3%82%AD%E3%83%83%E3%83%88/id1536102690"
+          >
+            <img src="image/gameimg.jpg" alt="" />
+            <p>ウーパールーパー育成キット</p>
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <a href="https://iki-tsuku.herokuapp.com/">
+            <img src="image/webimg.png" alt="" />
+            <p>Ikitsuku</p>
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
